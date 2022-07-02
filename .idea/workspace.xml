@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58a6e151-43bb-4182-9e16-111883f0dc63" name="Default Changelist" comment="-">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/blogs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/BL2022-07-02.md" beforeDir="false" afterPath="$PROJECT_DIR$/blogs/BL20220702.md" afterDir="false" />
-    </list>
+    <list default="true" id="58a6e151-43bb-4182-9e16-111883f0dc63" name="Default Changelist" comment="-" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +59,7 @@
       <workItem from="1656695486737" duration="6962000" />
       <workItem from="1656740876136" duration="4727000" />
       <workItem from="1656772332977" duration="136000" />
-      <workItem from="1656786094352" duration="6526000" />
+      <workItem from="1656786094352" duration="6910000" />
     </task>
     <task id="LOCAL-00001" summary="-">
       <created>1656771817338</created>
@@ -93,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656792124929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-">
+      <created>1656792865397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656792865397</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
