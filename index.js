@@ -1,4 +1,5 @@
 const TAGS = ["programming", "crypto", "physics", "astronomy", "finance", "olympiads", "python"]
+const URL = "https://raw.githubusercontent.com/iaa2005/iaa2005-blog/main/blogs/"
 
 function getQueryParam(item) {
     var svalue = window.location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)', 'i'));
@@ -8,7 +9,7 @@ function getQueryParam(item) {
 async function loadBlogs(blogs) {
     let i = 0;
     for (let blog of blogs) {
-        await $.get("blogs/" + blog + ".md", function (data) {
+        await $.get(URL + blog + ".md", function (data) {
             let conv = new showdown.Converter({metadata: true});
             let html = conv.makeHtml(data);
             let metadata = conv.getMetadata();
@@ -51,7 +52,7 @@ $(document).ready(async function () {
 
     if (getQueryParam("blog") !== null) {
         try {
-            $.get("blogs/" + getQueryParam("blog") + ".md", function (data) {
+            $.get(URL + getQueryParam("blog") + ".md", function (data) {
 
                 let conv = new showdown.Converter({metadata: true});
                 let html = conv.makeHtml(data);
