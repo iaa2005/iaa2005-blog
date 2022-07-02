@@ -9,7 +9,10 @@ function getQueryParam(item) {
 async function loadBlogs(blogs) {
     let i = 0;
     for (let blog of blogs) {
-        await $.get(URL + blog + ".md", function (data) {
+        // await $.get(URL + blog + ".md", function (data) {
+        $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(URL + blog + ".md"), function (data) {
+            data = data.contents
+
             let conv = new showdown.Converter({metadata: true});
             let html = conv.makeHtml(data);
             let metadata = conv.getMetadata();
@@ -46,13 +49,15 @@ async function loadBlogs(blogs) {
 }
 
 $(document).ready(async function () {
-    $.ajaxSetup({ beforeSend : function(xhr) {
-            xhr.setRequestHeader("Range", "bytes=0-3200000" );
-    }});
+    // $.ajaxSetup({ beforeSend : function(xhr) {
+    //         xhr.setRequestHeader("Range", "bytes=0-3200000" );
+    // }});
 
     if (getQueryParam("blog") !== null) {
         try {
-            $.get(URL + getQueryParam("blog") + ".md", function (data) {
+            // $.get(URL + getQueryParam("blog") + ".md", function (data) {
+            $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(URL + getQueryParam("blog") + ".md"), function (data) {
+                data = data.contents
 
                 let conv = new showdown.Converter({metadata: true});
                 let html = conv.makeHtml(data);
@@ -106,11 +111,11 @@ $(document).ready(async function () {
                     $(".nothing-text").css("display", "block");
                 }
                 for (let blog of blogs) {
+                    // $.get(URL + blog + ".md", function (data) {
 
-                    // $.ajax({type: "GET",
-                    //     url: "blogs/" + blog + ".md",
-                    //     headers : { "Range" : 'bytes=0-3200' }}, function (data) {
-                    $.get("blogs/" + blog + ".md", function (data) {
+                    $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(URL + blog + ".md"), function (data) {
+                        data = data.contents
+
                         let conv = new showdown.Converter({metadata: true});
                         let html = conv.makeHtml(data);
                         let metadata = conv.getMetadata();
