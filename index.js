@@ -1,4 +1,4 @@
-const TAGS = ["programming", "crypto", "physics", "astronomy", "finance", "olympiads"]
+const TAGS = ["programming", "crypto", "physics", "astronomy", "finance", "olympiads", "python"]
 
 function getQueryParam(item) {
     var svalue = window.location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)', 'i'));
@@ -85,6 +85,10 @@ $(document).ready(async function () {
         }
     } else {
         if (getQueryParam("tag") !== null && TAGS.indexOf(getQueryParam("tag")) !== -1) {
+            let tag = getQueryParam("tag");
+            console.log(`#${tag}-tag`)
+            $(`#${tag}-tag`).addClass("tag-chosed");
+
             await $.get("blogs.txt", function (data) {
                 let blogs = data.split("\n").filter(Boolean);
                 loadBlogs(blogs);
@@ -92,6 +96,7 @@ $(document).ready(async function () {
         } else {
             $.get("blogs.txt", function (data) {
                 let blogs = data.split("\n").filter(Boolean);
+
                 if (blogs.length === 0) {
                     $(".nothing-text").css("display", "block");
                 }

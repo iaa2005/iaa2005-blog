@@ -59,6 +59,13 @@ header {
     background: #c8c8c9;
     cursor: pointer;
 }
+.tag-chosed {
+    background: #3f3f4e;
+    color: #eaebee;
+}
+.tag-chosed:hover {
+    background: #26262f;
+}
 .blogs {
     display: flex;
     flex-direction: column;
@@ -101,6 +108,7 @@ metadata {
     flex-direction: column;
     gap: 0px;
     margin-top: 20px;
+    max-width: 800px;
 }
 titlebloghtml {
     font-weight: bold;
@@ -151,4 +159,11 @@ h1, h2, h3, h4, titlebloghtml {
 }
 code {
     font-size: 14px;
+}
+red {
+    color: #ff479d;
+    font-family: monospace;
+}
+pre code {
+    overflow-x: hidden;
 }
