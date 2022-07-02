@@ -45,6 +45,10 @@ async function loadBlogs(blogs) {
 }
 
 $(document).ready(async function () {
+    $.ajaxSetup({ beforeSend : function(xhr) {
+            xhr.setRequestHeader("Range", "bytes=0-3200000" );
+    }});
+
     if (getQueryParam("blog") !== null) {
         try {
             $.get("blogs/" + getQueryParam("blog") + ".md", function (data) {
@@ -101,6 +105,10 @@ $(document).ready(async function () {
                     $(".nothing-text").css("display", "block");
                 }
                 for (let blog of blogs) {
+
+                    // $.ajax({type: "GET",
+                    //     url: "blogs/" + blog + ".md",
+                    //     headers : { "Range" : 'bytes=0-3200' }}, function (data) {
                     $.get("blogs/" + blog + ".md", function (data) {
                         let conv = new showdown.Converter({metadata: true});
                         let html = conv.makeHtml(data);
