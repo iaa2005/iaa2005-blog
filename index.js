@@ -10,7 +10,7 @@ async function loadBlogs(blogs) {
     let i = 0;
     for (let blog of blogs) {
         // await $.get(URL + blog + ".md", function (data) {
-        $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(URL + blog + ".md"), function (data) {
+        await $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent(URL + blog + ".md"), function (data) {
             data = data.contents
 
             let conv = new showdown.Converter({metadata: true});
