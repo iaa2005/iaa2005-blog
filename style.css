@@ -15,6 +15,18 @@ body {
     min-height: 100vh;
     height: -webkit-fill-available;
 }
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    height: 100vh;
+    background-image: url("bg-blog-1-desktop-light.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
 header {
     display: flex;
     flex-direction: column;
@@ -24,8 +36,9 @@ header {
 }
 .title {
     color: #3f3f4e;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: 'IBM Plex Mono', monospace;
 }
 .logo-img {
     max-width: 175px;
