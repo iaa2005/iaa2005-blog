@@ -85,6 +85,7 @@ $(document).ready(async function () {
                 // console.log(md.render(data));
                 document.getElementById("blog-html").innerHTML = md.render(data)
 
+                $(".html-text").css("display", "block")
                 $("#blogs").css("display", "none");
                 $("header").css("display", "none");
             }).then(function () {
@@ -110,6 +111,7 @@ $(document).ready(async function () {
                 if (blogs.length === 0) {
                     $(".nothing-text").css("display", "block");
                 }
+
                 for (let blog of blogs) {
                     // $.get(URL + blog + ".md", function (data) {
 

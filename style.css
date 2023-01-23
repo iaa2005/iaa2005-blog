@@ -1,5 +1,5 @@
 body {
-    margin: auto;
+    margin: 60px auto;
     top: 0;
     left: 0;
     /*font-family: 'Manrope', sans-serif;*/
@@ -7,12 +7,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 100px 10px 20px;
+    padding: 40px 10px 20px;
     align-items: center;
     max-width: 800px;
     gap: 45px;
     font-weight: 500;
     min-height: 100vh;
+    min-width: fit-content;
     height: -webkit-fill-available;
 }
 .bg {
@@ -22,6 +23,8 @@ body {
     width: -webkit-fill-available;
     height: 100vh;
     background-image: url("bg-blog-1-desktop-light.png");
+    /*background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a2b306156469489.6367f4afeb4d9.jpg");*/
+    /*background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/6ce121132379685.61a7c0f645c25.jpg");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +44,7 @@ header {
     font-family: 'IBM Plex Mono', monospace;
 }
 .logo-img {
-    max-width: 175px;
+    max-width: -webkit-fill-available;
 }
 .tags {
     display: flex;
@@ -79,6 +82,10 @@ header {
 .tag-chosed:hover {
     background: #26262f;
 }
+.html-text {
+    display: none;
+    border-radius: 15px;
+}
 .blogs {
     display: flex;
     flex-direction: column;
@@ -90,6 +97,8 @@ blog {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
 }
 metadata {
     font-size: 14px;

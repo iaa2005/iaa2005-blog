@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58a6e151-43bb-4182-9e16-111883f0dc63" name="Default Changelist" comment="-">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_07_2022,_21_35_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_07_2022__21_35__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogs/BL20220702.md" beforeDir="false" afterPath="$PROJECT_DIR$/blogs/BL20220702.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +78,8 @@
       <workItem from="1656786094352" duration="11992000" />
       <workItem from="1657042517613" duration="1805000" />
       <workItem from="1657120835242" duration="1913000" />
+      <workItem from="1674507135907" duration="9000" />
+      <workItem from="1674507156060" duration="1691000" />
     </task>
     <task id="LOCAL-00001" summary="-">
       <created>1656771817338</created>
